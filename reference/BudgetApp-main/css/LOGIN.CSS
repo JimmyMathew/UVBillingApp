@@ -1,0 +1,40 @@
+body,
+	html {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		background: #C8C3C3 !important;
+		}
+		
+		
+		.form_container {
+		margin-top: 100px;
+		}
+		
+		.login_container {
+		padding: 0 2rem;
+		}
+		.login_btn {
+		width: 100%;
+		background: #4d4d4d !important;
+		color: white !important;
+		}
+.welcomeuser{
+
+color:white;
+padding-top: 2px;
+
+}
+.box{
+	
+  
+	border: 1px solid grey;
+ 
+   border-radius: 5px;
+  
+   
+   
+   
+  }
+
+		

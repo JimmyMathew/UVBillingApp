@@ -1,0 +1,36 @@
+.modalpad {
+	  
+	  padding-bottom:20px;
+	  
+	  
+  }
+  .radiopad{
+	  
+	  padding-left:13px;
+	  
+  }
+  
+.box{
+	
+  
+   border: 2px solid grey;
+  background-color:rgb(227, 223, 207); 
+ 
+  
+  
+	
+}
+.formpad{
+
+padding:43px;
+
+
+
+
+
+}
+body{
+	background-color:#343a40;
+	
+}
+

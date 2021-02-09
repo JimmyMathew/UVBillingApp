@@ -1,0 +1,78 @@
+
+  
+  .table-bordered > tbody > tr > td,.table-bordered > tbody > tr > th,.table-bordered > thead> tr > td,.table-bordered > thead > tr > th {
+	  
+	    border: 2px solid grey; 
+  }
+  
+  .colpad {
+	  
+	  padding-left:307px;
+	  
+  }
+  
+  a {
+	  color:black;
+  }
+  
+  .modalpad {
+	  
+	  padding-bottom:20px;
+	  
+	  
+  }
+
+  /* only used for background overlay not needed for centering */
+/* form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+    border-radius: 10px;
+} */
+.box{
+	
+  
+  border: 1px solid grey;
+ background-color: #343a40; 
+ border-radius: 5px;
+
+ 
+ 
+ 
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background-color: #343a40;
+  
+}
+
+/* IE 6 */
+* html footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+.footerpad{
+
+  padding-bottom:10px;
+}
+
+.fa-cog {
+  color:white;
+}
+.icon-cog {
+  color:white;
+}
+
+  
+  
