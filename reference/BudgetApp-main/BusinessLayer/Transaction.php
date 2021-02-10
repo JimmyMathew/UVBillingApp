@@ -21,7 +21,7 @@ $decoded = json_decode($FormDat, true);
 $date = date("Y/m/d");
 $namedb = $decoded['name'];
 $amountdb = $decoded['amount'];
-$categorydb = $decoded['category'];
+$categorydb = $decoded['category'];   
 $datedb = $decoded['date'];
 
  if(budgetlimit($amountdb) == "fail"){

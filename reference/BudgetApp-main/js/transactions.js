@@ -72,7 +72,7 @@ $(document).ready(function(){
 			 data:{transactionData:transactionData},
 			 dataType: 'JSON',
 			 
-			//  cache: false,
+			//  cache: false, 
 			//  processData: false
 			//  contentType: false,
 			 

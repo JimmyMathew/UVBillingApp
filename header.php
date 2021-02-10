@@ -13,9 +13,11 @@
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-
+    
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
@@ -29,19 +31,25 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-    <script src="vendors/jquery/dist/jquery.min.js"></script>
-    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="vendors/jquery/dist/jquery-3.5.1.min.js"></script> 
+    <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+   
+
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+  
     <script src="assets/js/main.js"></script>
 
 
     <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script src="assets/js/widgets.js"></script>
-
-    <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
-    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  
     <script>
         (function($) {
             "use strict";
@@ -59,8 +67,9 @@
                 normalizeFunction: 'polynomial'
             });
         })(jQuery);
-    </script>
-
+    </script> 
+     
+    
     <!-- My script files -->
     <script src="js/items.js"></script>
 
@@ -179,7 +188,7 @@
                     <div class="page-title">
                      <h1>Dashboard</h1>
                         
-                        <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+                        
                     </div>
                 </div>
            
