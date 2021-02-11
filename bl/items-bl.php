@@ -58,7 +58,7 @@ $itemId = $decodedFormData['id'];
 
       
        
-      $editItemsQuery = "UPDATE items SET name ='$itemName',code = $itemCode,rate=$itemRate, updated_on = '$date' WHERE id=$itemId";
+      $editItemsQuery = "UPDATE items SET name ='$itemName',code = $itemCode,rate=$itemRate, updatedOn = '$date' WHERE id=$itemId";
       
       
        
@@ -75,16 +75,16 @@ $itemId = $decodedFormData['id'];
       else if($operations == "deleteFunction")
       {
 
-        $deleteItemId = $_POST['deleteData'];
+        $deleteItemId = $_POST['deleteitem'];
 
 
-        $deleteItemQuery = "DELETE FROM transactions WHERE id= $deleteItemId ";
+        $deleteItemQuery = "DELETE FROM items WHERE id= $deleteItemId ";
    
-        if ($conn->query($deletesql) === TRUE) {
+        if ($conn->query($deleteItemQuery ) === TRUE) {
           // echo "New record created successfully";
           echo json_encode(readItemsTable());
           } else {
-          echo "Error: " . $deletesql . "<br>" . $conn->error;
+          echo "Error: " . $deleteItemQuery  . "<br>" . $conn->error;
           }
         
         } 

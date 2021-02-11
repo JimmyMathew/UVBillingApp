@@ -25,54 +25,17 @@
     <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="toast-plugin/jquery.basic.toast.css" />
+
+
+
 
 
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-    
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="vendors/jquery/dist/jquery-3.5.1.min.js"></script> 
-    <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
-    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
    
-
-    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-  
-    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
-  
-    <script src="assets/js/main.js"></script>
-
-
-    <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
-    <script src="assets/js/dashboard.js"></script>
-    <script src="assets/js/widgets.js"></script>
-  
-    <script>
-        (function($) {
-            "use strict";
-
-            jQuery('#vmap').vectorMap({
-                map: 'world_en',
-                backgroundColor: null,
-                color: '#ffffff',
-                hoverOpacity: 0.7,
-                selectedColor: '#1de9b6',
-                enableZoom: true,
-                showTooltip: true,
-                values: sample_data,
-                scaleColors: ['#1de9b6', '#03a9f5'],
-                normalizeFunction: 'polynomial'
-            });
-        })(jQuery);
-    </script> 
-     
-    
-    <!-- My script files -->
-    <script src="js/items.js"></script>
-
 
 </head>
 
@@ -88,8 +51,8 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
-                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <a class="navbar-brand" href="./"><h2>HOTEL UV</h2></a>
+                <a class="navbar-brand hidden" href="./"><h2>UV</h2></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -171,6 +134,7 @@
         </nav>
     </aside><!-- /#left-panel -->
     
+   
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
@@ -180,26 +144,29 @@
 
                 <div class="col-sm-7">
                     <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                    <!-- <div class="page-header float-left"> -->
+                    <!-- <div class="page-title"> -->
+                        <h1>ITEMS</h1>
+                    <!-- </div> -->
+                    <!-- </div> -->
                 </div>
-    <div class="breadcrumbs">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="page-header float-left">
+                </div>
+              
+                <div class="page-header float-right">
                     <div class="page-title">
-                     <h1>Dashboard</h1>
-                        
-                        
+                        <ol class="breadcrumb text-right">
+                        <button class="btn" data-toggle="modal"data-target="#myModal"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
+                        </ol>
                     </div>
                 </div>
-           
-        </div>
-        </div>
-            
-        
-</header>
+            </div>
+       
+              
+        </header><!-- /header -->
+        <!-- Header-->
 
-                <br>
-            
+      
     
 </body>
 </html>

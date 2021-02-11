@@ -1,4 +1,4 @@
-jquery(document).ready(function($){
+$(function() {
 	
     
     
@@ -17,8 +17,8 @@ jquery(document).ready(function($){
 		}
 		});
 
-	});	
-
+	
+	});
 			   
 		   	
               
@@ -69,17 +69,17 @@ function insertItemsData()
 	var code = $("#itemCode").val();
 	var rate = $("#itemRate").val(); 
 
-//    if (name == "" || name == null || name == undefined){
-// 	   $.Toast('Please enter your name', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
-//    }
-//    else if (date == "" || date == null || date == undefined){
-// 	   $.Toast('Please enter the Date', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
-//    }
-// 	   else if (amount == "" || amount == null || amount == undefined){
-// 		   $.Toast('Please enter the amount', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
-//    }
+   if (name == "" || name == null || name == undefined){
+	   $.Toast('Please enter your name', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
+   }
+   else if (code == "" || code == null || code == undefined){
+	   $.Toast('Please enter the code', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
+   }
+	   else if (rate == "" || rate == null || rate == undefined){
+		   $.Toast('Please enter the rate', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
+   }
   
-//    else {
+   else {
 
 	  var itemInsertObj = {name:name, code:code , rate:rate};
 	  var itemsFormDataStringified = JSON.stringify(itemInsertObj);
@@ -92,7 +92,7 @@ function insertItemsData()
 				
 	   
 			  RefreshTable(response);
-			  //$.Toast('Transaction created successfully', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
+			  $.Toast('Item created successfully', {'duration': 3000, 'class': 'red', 'position':'top','align':'center'});
 		   
 		   
 			  
@@ -106,7 +106,7 @@ function insertItemsData()
 			$('#myModal').modal('hide');
 		   
   }
-
+}
 
 function showInModal(id)
 	{
@@ -131,6 +131,21 @@ function showInModal(id)
 	function Edit()
 	{
 		
+	var name = $("#itemName").val();
+	var code = $("#itemCode").val();
+	var rate = $("#itemRate").val(); 
+
+   if (name == "" || name == null || name == undefined){
+	   $.Toast('Please enter your name', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
+   }
+   else if (code == "" || code == null || code == undefined){
+	   $.Toast('Please enter the code', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
+   }
+	   else if (rate == "" || rate == null || rate == undefined){
+		   $.Toast('Please enter the rate', {'duration': 3000, 'class': 'alert', 'position':'top','align':'center'});
+   }
+  
+   else {
 
 		  
 	var itemEditObj = {id:$("#itemId").val() ,name: $("#itemName").val(), code: $("#itemCode").val() ,rate: $("#itemRate").val()};
@@ -138,7 +153,7 @@ function showInModal(id)
 	$.ajax({
 		url: 'bl/items-bl.php?function=updateFunction',
 		type: 'post',
-		 data:{ItemEditFormData:ItemFormDataStringified},
+		 data:{itemEditFormData:ItemFormDataStringified},
 		 dataType: 'JSON',
         //  cache: false,
         //  processData: false,
@@ -148,6 +163,8 @@ function showInModal(id)
 			
 			
 			RefreshTable(response);
+			$.Toast('Item updated successfully', {'duration': 3000, 'class': 'red', 'position':'top','align':'center'});
+		   
 			
 		},
 		error: function (request, error) {
@@ -160,7 +177,7 @@ function showInModal(id)
     
 	 }
 	 
-
+	}
 	function deleteItem(id)
 
 	{
@@ -183,7 +200,8 @@ function showInModal(id)
 		
 				RefreshTable(response);
 				
-				
+				$.Toast('Item deleted successfully', {'duration': 3000, 'class': 'red', 'position':'top','align':'center'});
+		   
 				
 				
 
@@ -212,4 +230,4 @@ function clearAll()
 }
 
 			  
-	
+

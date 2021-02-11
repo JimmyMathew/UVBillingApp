@@ -55,7 +55,7 @@
       <div class="modal-footer">
         <button id = "submit" type="button" class="btn btn-dark" onclick="insertItemsData()">Submit</button>
 		  <button id ="clear" type="button" class="btn btn-danger"  onclick="clearAll()">Clear</button>
-     <button id ="edit" type="button" class="btn btn-success"  onclick="()">Update</button> 
+     <button id ="edit" type="button" class="btn btn-success"  onclick="Edit()">Update</button> 
       </div>
 
     </div>
@@ -63,18 +63,15 @@
 </div>
 
 
-<div class="row ">
-<div class="col-sm-6 ">
-<button class="btn" data-toggle="modal"data-target="#myModal"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
-</div>
-</div>
-<table class="table table-bordered"id = "itemsTable">
+
+<table class="table table-bordered table-striped"id = "itemsTable">
   <thead>
     <tr>
       <!-- <th style="text-align:center" scope="col">id</th> -->
       <th style="text-align:center" scope="col">Code</th>
       <th style="text-align:center" scope="col">Name</th>
       <th style="text-align:center" scope="col">Rate</th>
+      <th style="text-align:center" scope="col">Actions</th>
     </tr>
   </thead>
   <tbody></tbody>
