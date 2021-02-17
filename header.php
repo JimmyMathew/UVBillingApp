@@ -1,11 +1,5 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
 
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,9 +20,10 @@
     <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="toast-plugin/jquery.basic.toast.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
 
 
-
+ 
 
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -156,7 +151,7 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                        <button class="btn" data-toggle="modal"data-target="#myModal"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
+                        <button class="btn" onclick ="showModal()"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
                         </ol>
                     </div>
                 </div>

@@ -64,14 +64,15 @@
 
 
 
-<table class="table table-bordered table-striped"id = "itemsTable">
+<table class="table table-bordered table-striped"id = "dataTable">
   <thead>
     <tr>
-      <!-- <th style="text-align:center" scope="col">id</th> -->
+   
       <th style="text-align:center" scope="col">Code</th>
       <th style="text-align:center" scope="col">Name</th>
       <th style="text-align:center" scope="col">Rate</th>
       <th style="text-align:center" scope="col">Actions</th>
+      <!-- <th style="text-align:center" scope="col">Actions</th> -->
     </tr>
   </thead>
   <tbody></tbody>

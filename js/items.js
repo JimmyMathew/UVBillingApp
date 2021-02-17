@@ -1,6 +1,6 @@
 $(function() {
 	
-    
+    var table;
     
     
 
@@ -10,7 +10,9 @@ $(function() {
 		type: 'get',
         dataType: 'JSON',
         success: function(response){
-			RefreshTable(response);
+			//$('#itemsTable').DataTable();
+
+			refreshgrid(response);
 			},		
 		error: function (request, error) {
 			console.log(arguments);
@@ -22,7 +24,53 @@ $(function() {
 			   
 		   	
               
-              
+function refreshgrid(itemlist) {
+	// if (table != undefined && table != null)
+	// table.destroy();
+
+	table = $('#dataTable').DataTable({
+		data: itemlist,
+		columns: [
+
+
+			{ data: "code" },
+			{ data: "name" },
+			{ data: "rate" },
+
+			
+			{
+				data: "id",
+				"render": function (data, type, row, meta) {
+					var a = "";
+					a = '<a href="#" onclick="showInModal(\''
+					+ row.code + '\',\''
+					+ row.rate + '\',\''
+					+ row.id + '\',\''
+					+ row.name + '\')"><i class=\'fa fa-pencil\' style=\'font-size:36px;padding-left:25px;\' aria-hidden=\'true\'></i></a> <a href="#"  onclick=" deleteItem(\'' + row.id
+					+ '\')"><i class=\'fa fa-trash\' style=\'font-size:36px;padding-left:25px;\' aria-hidden=\'true\'></i></a>';
+					return a;
+				}
+				},
+
+				
+		],
+		//buttons: $scope.GetAddButton(),
+		dom: 'Bfrtip',
+		buttons: [
+			'copy', 'csv', 'excel', 'pdf', 'print'
+		],
+		"bDestroy": true,
+		select: false,
+		lengthChange: false,
+		"order": [[0, "desc"]],
+		//"scroll": "100"
+		//scrollY: '65vh',
+		//scrollCollapse: true,
+
+	});
+}
+	
+	
 function RefreshTable(response)
 {
 	var length = response.length;
@@ -91,7 +139,7 @@ function insertItemsData()
 		  success: function (response) {
 				
 	   
-			  RefreshTable(response);
+			refreshgrid(response);
 			  $.Toast('Item created successfully', {'duration': 3000, 'class': 'red', 'position':'top','align':'center'});
 		   
 		   
@@ -108,16 +156,17 @@ function insertItemsData()
   }
 }
 
-function showInModal(id)
+function showInModal(itemCode,itemRate,id,itemName)
 	{
+		$('#myModal').modal('show');
 		$("#edit").show();
 
 		$("#submit").hide();
 		 //var id = $("#edit"+id).closest("tr")[0].children[0].innerText;
-		 var itemCode = $("#edit"+id).closest("tr")[0].children[0].innerText;
-		 var itemName = $("#edit"+id).closest("tr")[0].children[1].innerText;
+		//  var itemCode = $("#edit"+id).closest("tr")[0].children[0].innerText;
+		//  var itemName = $("#edit"+id).closest("tr")[0].children[1].innerText;
 
-		 var itemRate = $("#edit"+id).closest("tr")[0].children[2].innerText;
+		//  var itemRate = $("#edit"+id).closest("tr")[0].children[2].innerText;
 		
 
 		 $("#itemCode").val(itemCode);
@@ -162,7 +211,7 @@ function showInModal(id)
         success: function (response) {
 			
 			
-			RefreshTable(response);
+			refreshgrid(response);
 			$.Toast('Item updated successfully', {'duration': 3000, 'class': 'red', 'position':'top','align':'center'});
 		   
 			
@@ -196,9 +245,7 @@ function showInModal(id)
 			success: function (response) {
 
 				
-			
-		
-				RefreshTable(response);
+				refreshgrid(response);
 				
 				$.Toast('Item deleted successfully', {'duration': 3000, 'class': 'red', 'position':'top','align':'center'});
 		   

@@ -5,12 +5,13 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="toast-plugin/jquery.basic.toast.js"></script>
+    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="vendors/jquery/dist/jquery-3.5.1.min.js"></script> 
     <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
     <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+   <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
   
-  
+   
 
   
   
