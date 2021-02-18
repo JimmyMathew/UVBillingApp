@@ -3,9 +3,12 @@
 </div>
  
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="toast-plugin/jquery.basic.toast.js"></script>
-    <script src="//cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+ 
+
     <script src="vendors/jquery/dist/jquery-3.5.1.min.js"></script> 
     <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
     <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>

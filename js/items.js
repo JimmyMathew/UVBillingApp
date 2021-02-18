@@ -29,6 +29,7 @@ function refreshgrid(itemlist) {
 	// table.destroy();
 
 	table = $('#dataTable').DataTable({
+		responsive: true,
 		data: itemlist,
 		columns: [
 
@@ -55,7 +56,7 @@ function refreshgrid(itemlist) {
 				
 		],
 		//buttons: $scope.GetAddButton(),
-		dom: 'Bfrtip',
+		dom: 'lBfrtip',
 		buttons: [
 			'copy', 'csv', 'excel', 'pdf', 'print'
 		],

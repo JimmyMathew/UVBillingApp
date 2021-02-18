@@ -64,14 +64,14 @@
 
 
 
-<table class="table table-bordered table-striped"id = "dataTable">
+<table class="table table-bordered table-striped display responsive nowrap" style="width:100%"id = "dataTable">
   <thead>
     <tr>
    
-      <th style="text-align:center" scope="col">Code</th>
-      <th style="text-align:center" scope="col">Name</th>
-      <th style="text-align:center" scope="col">Rate</th>
-      <th style="text-align:center" scope="col">Actions</th>
+      <th  scope="col">Code</th>
+      <th  scope="col">Name</th>
+      <th  scope="col">Rate</th>
+      <th  scope="col">Actions</th>
       <!-- <th style="text-align:center" scope="col">Actions</th> -->
     </tr>
   </thead>
