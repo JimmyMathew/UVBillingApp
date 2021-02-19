@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="toast-plugin/jquery.basic.toast.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" type="text/css" href=https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css" />
   
-    <link rel="stylesheet" type="text/css" href=https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css "/>
  
  
 
@@ -140,7 +140,7 @@
             <div class="header-menu">
 
                 <div class="col-sm-7">
-                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks" style = "padding-top:30%;" ></i></a>
                     <div class="header-left">
                     <!-- <div class="page-header float-left"> -->
                     <!-- <div class="page-title"> -->
