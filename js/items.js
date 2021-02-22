@@ -29,8 +29,10 @@ function refreshgrid(itemlist) {
 	// table.destroy();
 
 	table = $('#dataTable').DataTable({
+		
 		responsive: true,
 		data: itemlist,
+		
 		columns: [
 
 
@@ -56,7 +58,8 @@ function refreshgrid(itemlist) {
 				
 		],
 		//buttons: $scope.GetAddButton(),
-		dom: 'lBfrtip',
+		dom: 'Bfrtip',
+		dom: 'Blfrtip',
 		buttons: [
 			'copy', 'csv', 'excel', 'pdf', 'print'
 		],
@@ -178,6 +181,19 @@ function showInModal(itemCode,itemRate,id,itemName)
 		
 
 	}
+	
+function openModal()
+{
+	clearAll();
+	$('#myModal').modal('show');
+	$("#edit").hide();
+
+	$("#submit").show();
+	
+	 
+	
+
+}
 	function Edit()
 	{
 		

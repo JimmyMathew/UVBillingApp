@@ -153,7 +153,7 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                        <button class="btn" onclick ="showInModal()"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
+                        <button class="btn" onclick ="openModal()"><i class="fa fa-plus fa-3x" aria-hidden="true"></i></button>
                         </ol>
                     </div>
                 </div>
